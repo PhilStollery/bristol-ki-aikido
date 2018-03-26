@@ -1152,11 +1152,9 @@ p {
 #videosubstitute{display:block;width:100%;height:auto;}
 
 #fh5co-home{
-    width:100%;
+    min-width: 100%;
     min-height: 100%; 
    /* Set the height to match that of the viewport. */
-    height: 100vh;
-    width: auto;
     padding: 0!important;
     margin: 0!important;
     background-color: gray;
@@ -1187,7 +1185,7 @@ p {
     width: 150%;
     left: -100%;
   }
-  #videosubstitute{display:block;width:auto;height:100%;}
+  #videosubstitute{display:block;width:100%;height:auto;}
 }
 /*if there is 992  pixels or more, then display the video but hide the image*/
 @media only screen and (min-width : 992px) {

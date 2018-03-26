@@ -215,6 +215,7 @@ p {
   display: table-cell;
   width: 100%;
   vertical-align: middle;
+  float: left;
 }
 #fh5co-home .fh5co-copy-inner h1, #fh5co-home .fh5co-copy-inner h2 {
   margin: 0;
@@ -1180,11 +1181,14 @@ p {
 /*# sourceMappingURL=style.css.map */
 
 video#hero_bg{
+  top: 50%;
+  left: 50%;  
   min-width: 100%;
   min-width: 100%;
   width: auto;
   height: auto;
   background: url(../images/hero_bg.jpg) no-repeat;
   background-size: cover;
-  z-index: -1;
+  z-index: -100;
+  transform: translateX(-50%) translateY(-50%);
 }

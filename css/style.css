@@ -11,6 +11,7 @@ body {
   font-weight: 300;
   line-height: 1.8;
   color: #949494;
+  height: 100%;
 }
 body.fh5co-overflow {
   overflow-x: hidden;
@@ -194,13 +195,10 @@ p {
 }
 
 #fh5co-home {
-  width:100%;
-  min-height: 100%; 
- /* Set the height to match that of the viewport. */
-  height: 100vh;
-  width: auto;
-  padding:0!important;
-  margin: 0!important;
+  min-height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
   -webkit-box-shadow: inset -1px -11px 21px -15px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: inset -1px -11px 21px -15px rgba(0, 0, 0, 0.75);
   box-shadow: inset -1px -11px 21px -15px rgba(0, 0, 0, 0.75);
@@ -224,14 +222,14 @@ p {
   margin: 0;
   padding: 0;
 }
-#fh5co-home .fh5co-copy-inner h1 {
+#banner-message h1 {
   color: #fff;
   font-size: 55px;
   margin-bottom: 20px;
   line-height: 1.2;
   font-weight: 300;
 }
-#fh5co-home .fh5co-copy-inner h2 {
+#banner-message h2 {
   font-size: 20px;
   color: #fff;
   line-height: 1.2;
@@ -1189,11 +1187,19 @@ video#hero_b {
   object-fit: cover;
   left: 0px;
   top: 0px;
-  z-index: 1;
+  z-index: -1;
 }
 
-#banner-video {
-
+#fullScreenDiv{
+  width:100%;
+  min-height: 100%; 
+ /* Set the height to match that of the viewport. */
+  height: 100vh;
+  width: auto;
+  padding:0!important;
+  margin: 0!important;
+  background-color: gray;
+  position: relative;
 }
 
 #banner-message {

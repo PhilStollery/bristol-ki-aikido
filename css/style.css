@@ -1182,6 +1182,8 @@ p {
 /*# sourceMappingURL=style.css.map */
 
 video#hero_b {
+  width:100%;
+  min-height: 100%;   
   width: 100vw; 
   height: auto;
   object-fit: cover;

@@ -1219,18 +1219,13 @@ video#hero_b {
 /* Default to display the image on all devices */
 #videosubstitute{display:block;width:auto;height:100%;}
 
-html, body {
-    height: 100%;
-    margin: 0;
-}
-
 #fullScreenDiv{
     width:100%;
     min-height: 100%; 
    /* Set the height to match that of the viewport. */
     height: 100vh;
     width: auto;
-    padding:0!important;
+    padding: 0!important;
     margin: 0!important;
     background-color: gray;
     position: relative;

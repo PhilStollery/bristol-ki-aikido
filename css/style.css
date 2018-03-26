@@ -445,7 +445,6 @@ p {
   padding: 0;
   margin: 0;
   list-style: none;
-  float: left;
   display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
@@ -654,7 +653,6 @@ p {
   font-size: 23px;
   color: #57D131;
   font-family: 'icomoon';
-  speak: none;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -941,7 +939,7 @@ p {
 .mfp-with-zoom .mfp-container,
 .mfp-with-zoom.mfp-bg {
   opacity: 0;
-  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
   /* ideally, transition speed should match zoom duration */
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
@@ -1180,3 +1178,13 @@ p {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+video#hero_bg{
+  min-width: 100%;
+  min-width: 100%;
+  width: auto;
+  height: auto;
+  background: url(../images/hero_bg.jpg) no-repeat;
+  background-size: cover;
+  z-index: -1;
+}

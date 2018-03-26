@@ -1190,5 +1190,4 @@ video#hero_bg{
   background: url(../images/hero_bg.jpg) no-repeat;
   background-size: cover;
   z-index: -100;
-  transform: translateX(-50%) translateY(-50%);
 }

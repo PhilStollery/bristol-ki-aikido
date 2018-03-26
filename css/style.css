@@ -497,7 +497,7 @@ p {
     padding: 5em 0 3em 0;
   }
 }
-#fh5co-services .fh5co-video {
+#fh5co-team .fh5co-video {
   position: absolute;
   top: 0;
   width: 90px;
@@ -507,12 +507,12 @@ p {
   top: -45px;
   text-align: center;
 }
-#fh5co-services .fh5co-video span {
+#fh5co-team .fh5co-video span {
   display: block;
   padding-top: 100px;
   font-size: 14px;
 }
-#fh5co-services .fh5co-video a {
+#fh5co-team .fh5co-video a {
   float: left;
   width: 90px;
   height: 90px;
@@ -528,7 +528,7 @@ p {
   -ms-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.19);
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.19);
 }
-#fh5co-services .fh5co-video a i {
+#fh5co-team .fh5co-video a i {
   padding-left: 10px;
   text-align: center;
   height: 90px;
@@ -537,10 +537,10 @@ p {
   font-size: 40px;
   line-height: 40px;
 }
-#fh5co-services .fh5co-video a:hover {
+#fh5co-team .fh5co-video a:hover {
   background: #fba700;
 }
-#fh5co-services .fh5co-video a:hover, #fh5co-services .fh5co-video a:focus, #fh5co-services .fh5co-video a:active {
+#fh5co-team .fh5co-video a:hover, #fh5co-team .fh5co-video a:focus, #fh5co-team .fh5co-video a:active {
   text-decoration: none;
   outline: none;
   -webkit-transform: scale(1.2);
@@ -647,6 +647,7 @@ p {
   clear: both;
   padding: 7em 0;
   background: #E8ECF1;
+  position: relative;
 }
 @media screen and (max-width: 768px) {
   #fh5co-team {

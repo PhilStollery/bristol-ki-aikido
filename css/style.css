@@ -194,56 +194,6 @@ p {
   z-index: 1;
 }
 
-#fh5co-home {
-  min-height: 300px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  -webkit-box-shadow: inset -1px -11px 21px -15px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: inset -1px -11px 21px -15px rgba(0, 0, 0, 0.75);
-  box-shadow: inset -1px -11px 21px -15px rgba(0, 0, 0, 0.75);
-  position: relative;
-}
-#fh5co-home > .container {
-  position: relative;
-  z-index: 2;
-}
-#fh5co-home .fh5co-copy {
-  display: table;
-  width: 100%;
-}
-#fh5co-home .fh5co-copy-inner {
-  display: table-cell;
-  width: 100%;
-  vertical-align: middle;
-  float: left;
-}
-#fh5co-home .fh5co-copy-inner h1, #fh5co-home .fh5co-copy-inner h2 {
-  margin: 0;
-  padding: 0;
-}
-#banner-message h1 {
-  color: #fff;
-  font-size: 55px;
-  margin-bottom: 20px;
-  line-height: 1.2;
-  font-weight: 300;
-}
-#banner-message h2 {
-  font-size: 20px;
-  color: #fff;
-  line-height: 1.2;
-  color: rgba(255, 255, 255, 0.7);
-}
-#fh5co-home .fh5co-copy-inner a {
-  color: #fff;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
-}
-#fh5co-home .fh5co-copy-inner a:hover {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.9);
-  text-decoration: none;
-}
-
 .fh5co-main-nav {
   position: relative;
   background: #fff;
@@ -1181,45 +1131,27 @@ p {
 
 /*# sourceMappingURL=style.css.map */
 
-video#hero_b {
-  width:100%;
-  min-height: 100%;   
-  width: 100vw; 
-  height: auto;
-  object-fit: cover;
-  left: 0px;
-  top: 0px;
-  z-index: -1;
+#messageBox h1 {
+  color: #fff;
+  font-size: 55px;
+  margin-bottom: 20px;
+  line-height: 1.2;
+  font-weight: 300;
 }
-
-#fullScreenDiv{
-  width:100%;
-  min-height: 100%; 
- /* Set the height to match that of the viewport. */
-  height: 100vh;
-  width: auto;
-  padding:0!important;
-  margin: 0!important;
-  background-color: gray;
-  position: relative;
-}
-
-#banner-message {
-  position: absolute;  top: 0;  left: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height:100%;  
+#messageBox h2 {
+  font-size: 20px;
+  color: #fff;
+  line-height: 1.2;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 /* Default to hide the video on all devices */
 #video{display:none}
 
 /* Default to display the image on all devices */
-#videosubstitute{display:block;width:auto;height:100%;}
+#videosubstitute{display:block;width:100%;height:auto;}
 
-#fullScreenDiv{
+#fh5co-home{
     width:100%;
     min-height: 100%; 
    /* Set the height to match that of the viewport. */

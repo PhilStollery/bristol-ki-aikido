@@ -310,25 +310,7 @@ sup {
   -moz-flex-wrap: wrap;
   background: #E8ECF1;
   width: 100%;
-  padding-top: 7em;
-}
-
-#fh5co-about .fh5co-2col {
-  width: 50%;
-}
-
-@media screen and (max-width: 768px) {
-  #fh5co-about .fh5co-2col {
-    width: 100%;
-  }
-}
-
-#fh5co-about .fh5co-2col-inner {
-  padding: 5em 0;
-  width: 585px;
-  margin-right: auto;
-  margin-left: auto;
-  padding: 0 3em 7em 3em;
+  padding: 7em 0;
 }
 
 #fh5co-about .inner-text p {
@@ -338,39 +320,6 @@ sup {
 #fh5co-about .inner-text h3 {
   font-size: 16px;
   margin-bottom: 10px;       
-}
-
-@media screen and (max-width: 1200px) {
-  #fh5co-about .fh5co-2col-inner {
-    width: 485px;
-  }
-}
-@media screen and (max-width: 992px) {
-  #fh5co-about .fh5co-2col-inner {
-    width: 375px;
-  }
-}
-@media screen and (max-width: 768px) {
-  #fh5co-about .fh5co-2col-inner {
-    width: 100% !important;
-    padding: 0em 2em 3em 2em
-  }
-}
-#fh5co-about .fh5co-2col-inner.left {
-  float: right;
-}
-@media screen and (max-width: 768px) {
-  #fh5co-about .fh5co-2col-inner.left {
-    float: none;
-  }
-}
-#fh5co-about .fh5co-2col-inner.right {
-  float: left;
-}
-@media screen and (max-width: 768px) {
-  #fh5co-about .fh5co-2col-inner.right {
-    float: none;
-  }
 }
 
 .fh5co-grid {
@@ -1178,7 +1127,6 @@ sup {
 #videosubstitute{display:block;width:100%;height:auto;}
 
 #fh5co-home{
-    height: 100vh; 
     background: black;
    /* Set the height to match that of the viewport. */
 }

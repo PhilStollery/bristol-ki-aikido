@@ -21,11 +21,11 @@
   <link rel="stylesheet" href="css/magnific-popup.css">
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/style.css">
+  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.css' rel='stylesheet' />    
 </head>
 
 <body>
   <div class="fh5co-loader"></div>
-
   <div id="fh5co-home" data-section="home">
     <video id="video" autoplay="autoplay" playsinline="playsinline" muted="muted" preload="preload" poster="images/hero_bg.jpg">
       <source src="images/BackgroundVideo.mp4" type="video/mp4" />
@@ -204,39 +204,32 @@
       </div>
       <div id="fh5co-contact" data-section="contact">
         <div class="container">
-          <div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
-            <h2>Get In Touch</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nam itaque ipsam iste provident quo ipsam iste
-              provident.
-            </p>
+          <div class="col-md-12 text-center fh5co-heading">
+            <h2>Bristol Aikido Dojo</h2>
+              </br>We train in the upstairs dance studio at Riverside Leisure Club, Little Stoke.
+              </br>You can email us at <a href="mailto:sensei@bristol-ki-aikido.org" target="_blank">sensei@bristol-ki-aikido.org</a>.
+              </br>Or call us on <a href="tel:07966%20014932">07966 014932</a>.</p>
           </div>
-          <form name="contact-form" netlify-honeypot="_gotcha" action="thank-you" netlify>
-            <div class="row">
-              <div class="col-md-6">
-                <div class="form-group">
-                  <input type="text" class="form-control" id="inputName" placeholder="Your name" name="_name">
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="form-group">
-                  <input type="email" class="form-control" id="inputEmail" placeholder="Your email" name="_replyto" required>
-                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                </div>
-              </div>
-              <div class="col-md-12">
-                <div class="form-group">
-                  <textarea class="form-control" id="inputBody" cols="30" rows="7" placeholder="Please enter a message." name="message"></textarea>
-                </div>
-              </div>
-              <div class="col-md-12">
-                <div class="form-group">
-                  <input type="hidden" name="_subject" value="New website query">
-                  <input type="text" name="_gotcha" style="display:none">
-                  <button type="submit" class="btn btn-primary btn-outline" value="Send">Submit</button>
-                </div>
-              </div>
-            </div>
-          </form>
+          <div id="address" class="col-md-3">
+              <h5>Address</h5>
+              <p><strong>Bristol Ki Aikido</strong>
+                <br>Riverside Leisure Club
+                <br>Station Road
+                <br>Little Stoke
+                <br>Bristol
+                <br>BS34 6HW</p>                       
+          </div>
+          <div id="map-column" class="col-md-9">
+              <h5>Map</h5>
+              <div id='map' style="height: 300px"></div>
+              <script>
+              mapboxgl.accessToken = 'pk.eyJ1IjoicGhpbHN0b2xsZXJ5IiwiYSI6ImNqZjE4YW9hOTA4Y24zM2xuNmpkNjlhNjgifQ.tRF3s01di4CzjmKEulfj_Q';
+              var map = new mapboxgl.Map({
+                  container: 'map',
+                  style: 'mapbox://styles/mapbox/streets-v9'
+              });
+              </script>
+          </div>
         </div>
       </div>
       <div id="fh5co-footer">
@@ -303,6 +296,7 @@
   <script src="js/jquery.magnific-popup.min.js"></script>
   <script src="js/magnific-popup-options.js"></script>
   <script src="js/main.js"></script>
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.js'></script>
 </body>
 
 </html>

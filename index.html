@@ -21,7 +21,8 @@
   <link rel="stylesheet" href="css/magnific-popup.css">
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/style.css">
-  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.css' rel='stylesheet' />    
+  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.css' rel='stylesheet' />
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.js'></script>      
 </head>
 
 <body>
@@ -223,11 +224,11 @@
               <h5>Map</h5>
               <div id='map' style="height: 300px"></div>
               <script>
-              mapboxgl.accessToken = 'pk.eyJ1IjoicGhpbHN0b2xsZXJ5IiwiYSI6ImNqZjE4YW9hOTA4Y24zM2xuNmpkNjlhNjgifQ.tRF3s01di4CzjmKEulfj_Q';
-              var map = new mapboxgl.Map({
-                  container: 'map',
-                  style: 'mapbox://styles/mapbox/streets-v9'
-              });
+                mapboxgl.accessToken = 'pk.eyJ1IjoicGhpbHN0b2xsZXJ5IiwiYSI6ImNqZjE4YW9hOTA4Y24zM2xuNmpkNjlhNjgifQ.tRF3s01di4CzjmKEulfj_Q';
+                var map = new mapboxgl.Map({
+                    container: 'map',
+                    style: 'mapbox://styles/mapbox/streets-v9'
+                });
               </script>
           </div>
         </div>
@@ -296,7 +297,6 @@
   <script src="js/jquery.magnific-popup.min.js"></script>
   <script src="js/magnific-popup-options.js"></script>
   <script src="js/main.js"></script>
-  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.js'></script>
 </body>
 
 </html>

@@ -112,7 +112,7 @@
 		    	$section.attr('style', '').removeClass('fh5co-shadow');
 		  	}
 		}, {
-		  	offset: function() { return -$(this.element).height() + 69; }
+		  	offset: function() { return -$(this.element).height() + 40; }
 		});
 
 	};

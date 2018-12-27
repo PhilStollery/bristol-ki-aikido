@@ -9,7 +9,7 @@ body {
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 18px;
   font-weight: 300;
-  line-height: 1.8;
+  line-height: 1.4;
   color: #353535;
   height: 100%;
 }
@@ -550,6 +550,12 @@ sup {
   font-size: 40px;
   color: #fba700;
 }
+
+#fh5co-about .icon i {
+  font-size: 40px;
+  color: #fba700;
+}
+
 #fh5co-services .service h3 {
   text-align: center;
   font-size: 16px;
@@ -1125,12 +1131,14 @@ sup {
 #fh5co-home{
     background: black;
    /* Set the height to match that of the viewport. */
+   padding: 10px 10px 0px 10px;
+   text-align: center;
 }
 
 #video{    
     padding: 0!important;
     margin: 0!important;
-    max-width: 100vw;
+    max-width: 100%;
     min-height: 100%;
 }
 
@@ -1143,10 +1151,13 @@ sup {
 
 /* The container for our text and stuff */
 #messageBox {
-    position: absolute;  top: 0;  left: 0;
+    position: absolute;  top: 2%;  left: 5%;
     display: flex;
-    align-items: center;
-    justify-content: center;
     width: 100%;
     text-shadow: 1px 1px 3px #222;
+    text-align: left;
+}
+
+.kmsbda-logo {
+  width: 100px
 }

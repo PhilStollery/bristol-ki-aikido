@@ -1,0 +1,61 @@
+server {
+    listen 80;
+    
+    server_name bristol-ki-aikido.org www.bristol-ki-aikido.org ksmbda.stollerys.co.uk;
+    root /home/director/bristol-ki-aikido.org/;
+    index index.html;
+
+    location / {
+        default_type "text/html";
+        try_files $uri.html $uri $uri/ /index.html;
+    }
+
+    listen 443 ssl; # managed by Certbot
+    ssl_certificate /etc/letsencrypt/live/bristol-ki-aikido.org/fullchain.pem; # managed by Certbot
+    ssl_certificate_key /etc/letsencrypt/live/bristol-ki-aikido.org/privkey.pem; # managed by Certbot
+    ssl_session_cache shared:le_nginx_SSL:1m; # managed by Certbot
+    ssl_session_timeout 1440m; # managed by Certbot
+
+    ssl_protocols TLSv1 TLSv1.1 TLSv1.2; # managed by Certbot
+    ssl_prefer_server_ciphers on; # managed by Certbot
+
+    ssl_ciphers "ECDHE-ECDSA-AES128-GCM-SHA256 ECDHE-ECDSA-AES256-GCM-SHA384 ECDHE-ECDSA-AES128-SHA ECDHE-ECDSA-AES256-SHA ECDHE-ECDSA-AES128-SHA256 ECDHE-ECDSA-AES256-SHA384 ECDHE-RSA-AES128-GCM-SHA256 ECDHE-RSA-AES256-GCM-SHA384 ECDHE-RSA-AES128-SHA ECDHE-RSA-AES128-SHA256 ECDHE-RSA-AES256-SHA384 DHE-RSA-AES128-GCM-SHA256 DHE-RSA-AES256-GCM-SHA384 DHE-RSA-AES128-SHA DHE-RSA-AES256-SHA DHE-RSA-AES128-SHA256 DHE-RSA-AES256-SHA256 EDH-RSA-DES-CBC3-SHA"; # managed by Certbot
+
+    if ($scheme != "https") {
+        return 301 https://$host$request_uri;
+    } # managed by Certbot
+
+    gzip on;
+    gzip_types application/javascript image/* text/css;
+    gunzip on;
+    gzip_vary on;
+
+#Expire rules for static content
+
+# cache.appcache, your document html and data
+location ~* \.(?:manifest|appcache|html?|xml|json)$ {
+  expires -1;
+  # access_log logs/static.log; # I don't usually include a static log
+}
+
+# Feed
+location ~* \.(?:rss|atom)$ {
+  expires 1h;
+  add_header Cache-Control "public";
+}
+
+# Media: images, icons, video, audio, HTC
+location ~* \.(?:jpg|jpeg|gif|png|ico|cur|gz|svg|svgz|mp4|ogg|ogv|webm|htc)$ {
+  expires 1M;
+  access_log off;
+  add_header Cache-Control "public";
+}
+
+# CSS and Javascript
+location ~* \.(?:css|js)$ {
+  expires 1y;
+  access_log off;
+  add_header Cache-Control "public";
+}
+
+}

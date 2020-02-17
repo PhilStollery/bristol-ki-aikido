@@ -237,7 +237,7 @@
             <p>We train in the upstairs dance studio at Riverside Leisure Club, Little Stoke</p>
             <p>Call us on <a href="tel:07966%20014932" title="tap to call us">07966 014932</a></p>
             <p>Email us on <a href="mailto:	sensei@bristol-ki-aikido.uk" title="tap to email us">sensei@bristol-ki-aikido.uk</a></p>
-            <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+            <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true" data-netlify-recaptcha="true">
               <div class="form-group text-left">
                 <label for="email">Your email</label>
                 <input type="email" class="form-control" id="email" name="email" placeholder="your-email@address.com" required aria-required="true">
@@ -249,6 +249,7 @@
                 <label for="message">Message</label>
                 <textarea class="form-control" id="message" name="message" rows="3" required aria-required="true"></textarea>
               </div>
+              <div data-netlify-recaptcha="true"></div>
               <button type="submit" class="btn btn-primary">Send email</button>
             </form>
           </div>
